@@ -1,0 +1,76 @@
+#btnAd {
+    width: 6em;
+    height: 2.3em;
+    border-radius: .5em;
+    border: none;
+    background: #21038d;
+    color: rgb(232, 236, 240);
+    cursor: pointer;
+    margin: 1em;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    padding: .5em;
+    background-color: rgb(127, 152, 235);
+    border-radius: 1em;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20em;
+    display: none;
+}
+
+.card .contremov {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+.card .contremov button {
+    width: 3em;
+    color: #fcfcfc;
+    background: #e00303;
+}
+
+
+
+.card input {
+    margin: 0.5em;
+    width: 22em;
+    height: 1.9em;
+    border-radius: .5em;
+    border: none;
+    outline: none;
+}
+
+.card button {
+    margin-top: 0.6em;
+    width: 6em;
+    height: 2.3em;
+    border-radius: .5em;
+    border: none;
+    background: #21038d;
+    color: rgb(232, 236, 240);
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+.card button:hover {
+    background: #eae9f0;
+    color: #21038d;
+    transition: all ease .5s;
+}
+
+.mostrarCard {
+    display: flex;
+}

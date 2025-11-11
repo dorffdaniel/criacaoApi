@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <h1>teste api </h1>
+
+    <p id="mensagemApi"></p>
+
+    <button onclick="adicionar()" id="btnAd">adicionar</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissao</th>
+            </tr>
+        </thead>
+        <tbody id="result"></tbody>
+
+    </table>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="contremov">
+                <button onclick="fecharCard()">x</button>
+            </div>
+            <input type="text" id="nome" placeholder="digite seu nome">
+            <input type="number" id="idade" min="0" placeholder="digite sua idade">
+            <input type="text" id="profissao" placeholder="digite sua profissao">
+
+            <button onclick="enviar()">enviar</button>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
