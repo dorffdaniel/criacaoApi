@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     res.setHeader('Content-Type', 'application/json');
 
-    // 🔹 Preflight OPTIONS
+    // Preflight OPTIONS
     if (req.method === "OPTIONS") {
         res.writeHead(204); // sem conteúdo
         res.end();
@@ -59,7 +59,7 @@ const server = http.createServer((req, res) => {
                 console.log("Usuários atuais:", usuarios);
 
                 res.end(JSON.stringify({
-                    mensagem: `Usuário ${dados.nome} adicionado com sucesso!`,
+                    mensagem: `Usuário ${dados.nome} successfully added`,
                     dadosRecebidos: dados
                 }));
             } catch (err) {

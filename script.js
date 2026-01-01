@@ -50,31 +50,31 @@ async function mostrar() {
 }
 
 
-function adicionar() {
+function add() {
     card.classList.add("mostrarCard");
 }
 
-function fecharCard() {
+function closeCard() {
     card.classList.remove("mostrarCard");
 }
 
 
 
-async function enviar() {
-    let nome = document.getElementById('nome').value
+async function send() {
+    let name = document.getElementById('nome').value
     let idade = document.getElementById('idade').value
     let profissao = document.getElementById('profissao').value
 
-    if (nome.trim() == '' || idade.trim() == '' || profissao.trim() == '') {
-        alert("Preencha todos os campos");
+    if (name.trim() == '' || idade.trim() == '' || profissao.trim() == '') {
+        alert("fill in all the fields");
         return;
     }
 
-    console.log(nome)
+    console.log(name)
     console.log(idade)
     console.log(profissao)
 
-    const usuario = { nome, idade, profissao };
+    const usuario = { name, idade, profissao };
     let adicionar = url + "/adicionar";
 
     try {

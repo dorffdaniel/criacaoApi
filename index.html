@@ -11,19 +11,16 @@
 
 <body>
 
-
-    <h1>teste api </h1>
-
     <p id="mensagemApi"></p>
 
-    <button onclick="adicionar()" id="btnAd">adicionar</button>
+    <button onclick="add()" id="btnAd">add new </button>
 
     <table>
         <thead>
             <tr>
-                <th>Nome</th>
-                <th>Idade</th>
-                <th>Profissao</th>
+                <th>Name</th>
+                <th>Agge</th>
+                <th>Profession</th>
             </tr>
         </thead>
         <tbody id="result"></tbody>
@@ -34,13 +31,13 @@
 
         <div class="card">
             <div class="contremov">
-                <button onclick="fecharCard()">x</button>
+                <button onclick="closeCard()">x</button>
             </div>
-            <input type="text" id="nome" placeholder="digite seu nome">
-            <input type="number" id="idade" min="0" placeholder="digite sua idade">
-            <input type="text" id="profissao" placeholder="digite sua profissao">
+            <input type="text" id="nome" placeholder="write your name">
+            <input type="number" id="idade" min="0" placeholder="write your age">
+            <input type="text" id="profissao" placeholder="write your Profession">
 
-            <button onclick="enviar()">enviar</button>
+            <button onclick="send()">send</button>
         </div>
 
     </div>
